@@ -5,3 +5,15 @@ object TestMain {
     Lifter.m
   }
 }
+
+class A(i: Int) {
+  def this() {
+    this(1)
+  }
+}
+
+// class B(i: Int) extends A(i) {
+//   def this() {
+//     this(1)
+//   }
+// }
