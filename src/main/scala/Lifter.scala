@@ -26,7 +26,7 @@ object Lifter {
 
       val classTree = wholeSource flatMap (sourceTree => sourceTree.find(tree => isCorrectClassDef(tree)))
 
-      println(c.typeCheck(c.resetLocalAttrs(classTree.head.duplicate)))
+      println(c.typeCheck(c.resetLocalAttrs(Block(List(classTree.head.duplicate), Literal(Constant(()))))))
 
       // println(PrettyPrinter.show(c.resetAllAttrs(c.enclosingUnit.body)))
 
