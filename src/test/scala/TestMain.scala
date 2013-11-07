@@ -9,6 +9,8 @@ object TestMain {
 class A(i: Int) {
   def this() {
     this(1)
+    println("""Hello in multiline!
+      """)
   }
 }
 
